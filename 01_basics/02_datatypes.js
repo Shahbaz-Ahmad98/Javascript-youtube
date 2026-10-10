@@ -4,7 +4,7 @@
 
 console.log(3 
     +
-     3); // code readability shoukd be high
+     3); // code readability should be high
 
 console.log("Hitesh"); // This will print "Hitesh"
 
