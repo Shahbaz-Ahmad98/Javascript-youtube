@@ -44,3 +44,28 @@ const myFunction = function() {
 console.log(typeof heros); // This will print "object"
 console.log(typeof myObj); // This will print "object"
 console.log(typeof myFunction); // This will print "function"
+
+
+
+
+// ++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYouTubename = "hiteshchoudhary.com"; // Primitive data type is stored in stack memory
+
+let anotherYouTubeName = myYouTubename; // anotherYouTubeName is a copy of myYouTubename, so it is also stored in stack memory
+anotherYouTubeName = "chaiaurcode" // anotherYouTubeName is changed, but myYouTubename is not changed because they are stored in different memory locations
+
+console.log(myYouTubename); // This will print "hiteshchoudhary.com"
+console.log(anotherYouTubeName); // This will print "chaiaurcode"
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@upi"
+}
+
+let userTwo = userOne; // userTwo is a reference to userOne, so it is stored in heap memory
+userTwo.email = "hitesh@google.com"; // This will change the email for both userOne and userTwo since they reference the same object in memory
+console.log(userOne.email); // This will print "hitesh@google.com"
+console.log(userTwo.email); // This will print "hitesh@google.com"
